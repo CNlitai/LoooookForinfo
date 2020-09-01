@@ -1,22 +1,16 @@
 <template>
-  <div>
+  <div class="article">
     文章管理
   </div>
 </template>
-
-<script>
-import axios from "axios"
-export default {
-  data() {
-    return {
-      
-    }
-  },
-  methods() {
-    axios({
-      url: "http://139.196.24.143:8099/"
-      
-    })
+<style scoped>
+  .article {
+    width: 98%;
+    height: 98%;
+    background-color: #fffff1;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
   }
-}
-</script>
+</style>
