@@ -6,7 +6,7 @@ import router from './router'
 // 导入组件库
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
+import store from './store/store'
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 
@@ -14,6 +14,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

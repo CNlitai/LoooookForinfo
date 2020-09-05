@@ -1,14 +1,14 @@
 <template>
   <div class="article">
     <div class="border">
-    文章管理
+      文章管理
     </div>
 
     <div class="search">
       <el-button plain size="small">新增</el-button>
     </div>
 
-    <div>
+    <div class="content">
       <el-table
       size='small'
       border
@@ -34,6 +34,13 @@
         label="地址">
       </el-table-column>
     </el-table>
+    </div>
+    <div class="page">
+      <el-pagination
+        background
+        layout="prev, pager, next"
+        :total="1000">
+      </el-pagination>
     </div>
   </div>
 </template>
@@ -81,5 +88,9 @@ export default {
   .border {
     border-bottom: 1.5px solid #ddd;
     margin-bottom:10px;
+  }
+  .content {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 </style>
